@@ -1,15 +1,15 @@
-TypeScript CLI Calculator (tcalc)
+# TypeScript CLI Calculator (tcalc)
 
 
-Features
+## Features
 
-Basic arithmetic
+### Basic arithmetic
 Supports the main math operators:
-+  -  *  /  ^  %
+**+** (addition), **-** (subtraction), **\*** (multiplication), **/** (division), **^** (exponentiation), **%** (modulo).
 Example: 
 tcalc eval "(1+2)*3"
 
-Numeric types
+### Numeric types
 The calculator can work with several number formats:
 Real numbers (example: 3.14, -5, 10)
 BigInt numbers (example: 1000000000000n)
@@ -18,7 +18,7 @@ Complex numbers (example: 2+3i)
 Example:
 tcalc eval "(2+3i)*(1-2i)"
 
-Scientific functions
+### Scientific functions
 The calculator includes a few common functions:
 sin(x)
 cos(x)
@@ -27,7 +27,7 @@ Examples:
 tcalc eval "sin(1)"
 tcalc eval "sqrt(9) + cos(0)"
 
-Commands
+## Commands
 
 tcalc eval "<expression>" - Evaluates a mathematical expression.
 Examples:
@@ -54,7 +54,7 @@ tcalc eval "1/2 + 3/4"
 tcalc eval "(2+3i)*(1-2i)"
 
 
-Structure:
+## Structure:
 src/
   cli/         - command-line interface and command definitions
   core/        - main logic: numeric types, evaluator, registry
