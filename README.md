@@ -60,9 +60,11 @@ tcalc eval "(2+3i)*(1-2i)"
 
 
 ## Structure:
+```bash
 src/
 ├── cli/         # Command-line interface and command definitions
 ├── core/        # Main logic: numeric types, evaluator, registry
 ├── parse/       # Tokenizer and expression parser
 ├── plugins/     # Arithmetic and scientific operations
 └── util/        # Output formatting
+```
