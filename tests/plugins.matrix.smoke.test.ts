@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { Matrix } from "../src/plugins/matrix.js";
+import { Matrix } from "../src/plugins/matrix/matrix.js";
 import { R } from "../src/core/numeric.js";
 
 describe("matrix (smoke)", () => {

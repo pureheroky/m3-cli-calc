@@ -1,10 +1,5 @@
-export type Token =
-  | { t: "num"; v: string }
-  | { t: "id"; v: string }
-  | { t: "op"; v: string }
-  | { t: "lp" }
-  | { t: "rp" }
-  | { t: "comma" };
+import type { Token } from "./token.js";
+export type { Token };
 
 const re =
   /\s*([0-9]+(?:\.[0-9]+)?(?:[+-][0-9]+(?:\.[0-9]+)?i)?|[A-Za-z_][A-Za-z_0-9]*|[-+*/^%]|[(),]|\d+\/\d+)\s*/y;

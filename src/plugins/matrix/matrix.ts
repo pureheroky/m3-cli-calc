@@ -1,4 +1,4 @@
-import type { Numeric } from "../core/numeric.js";
+import type { Numeric } from "../../core/numeric.js";
 
 export class Matrix<T extends Numeric> {
   readonly rows: number;

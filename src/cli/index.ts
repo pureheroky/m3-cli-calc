@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 import { Command } from "commander";
-import { parseExpr } from "../parse/parser.js";
-import { evaluate } from "../core/eval.js";
-import { Registry } from "../core/registry.js";
-import { installArithmetic } from "../plugins/arithmetic.js";
-import { installScientific } from "../plugins/scientific.js";
+import { parseExpr } from "../parse/index.js";
+import { evaluate, Registry, R, B } from "../core/index.js";
+import {
+  installArithmetic,
+  installScientific,
+  parseFraction,
+  parseComplex,
+} from "../plugins/index.js";
 import { format } from "../util/format.js";
-import { parseFraction } from "../plugins/fraction.js";
-import { parseComplex } from "../plugins/complex.js";
-import { R, B } from "../core/numeric.js";
 
 const program = new Command();
 program
